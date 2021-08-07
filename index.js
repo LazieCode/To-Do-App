@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8000;
+const port = process.env.PORT || 8000;
 const path = require('path');
 const Contact = require('../contact_list/models/contact');
 
