@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.container{
+    background-color: white;
+    margin: auto;
+    min-height: 800px;
+    width: 60%;
+    margin-top: 2rem;
+    /* padding: 20px;; */
+}
+
+
+hr{
+    color: grey;
+    /* margin: 5px  0px; */
+}
+
+#main-heading{
+    font-size: 3rem;
+    font-family: monospace;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+
+}
+
+form{
+    padding: 10px 25px;
+}
+
+h2{
+    color: rgba(24, 23, 23, 0.794);
+    font-family: monospace;
+    padding-top: 1rem;
+}
+
+#main-form input, #main-form select{
+    border: none;
+    font-size: 1.2rem;
+    width: 95%;
+    outline: none;
+    margin: 10px 0 30px 0;
+}
+
+#details{
+    width: 95%;
+}
+
+#first{
+    border-right: 1px solid grey;
+    width: 50%;
+}
+
+#second{
+    padding-left: 1em;
+}
+
+#add{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 11em;
+    font-size: 1.5rem;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transition: 0.2s all;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+#delete{
+    background-color: red;
+    height: auto;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transition: 0.2s all;
+    color: white; 
+    cursor: pointer; 
+    display: block;
+    margin: auto;   
+    margin-bottom: 20px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+#task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    zoom: 1.75;
+}
+
+#one label{
+    font-size: 1.75em;
+    padding-left: 10px;
+}
+
+#two{
+    border: 1px solid black;
+    text-align: center;
+    min-width: 80px;
+    padding: 10px;
+    margin-right: 50px;
+    max-height:20px;
+    border-radius: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #9c00af;
+}
+
+#one p{
+    margin: 10 0px 10 40;
+    font-size: 1.1em;
+    color: grey;
+}

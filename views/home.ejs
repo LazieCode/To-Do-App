@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            <%= title %> 
+        </title>
+        <link rel="stylesheet" href="/home.css">
+        <script src="https://kit.fontawesome.com/d9e95dcf38.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 id="main-heading">
+                TODO App
+            </h1>
+            <hr>
+
+            <form action="/create-task" method="POST" id="main-form">
+                <div id="des">
+                    <h2>DESCRIPTION</h2>
+                    <input type="text" name="desc" id="desc" placeholder="What do you need to do?">
+                </div>
+                <hr>
+
+                <table id="details">
+                    <tr>
+                        <td id="first"><h2>CATEGORY</h2>
+                            
+                            <select name="catg" id="catg" >
+                                
+                                <optgroup label="Choose a category">
+                                    <option value="personal">Personal</option>
+                                    <option value="Home">Home</option>
+                                    <option value="College">College</option>
+                                    <option value="Other">Other</option>
+                                </optgroup>
+                            </select></td>
+                        <td id="second">
+                            <h2>DUE DATE</h2>
+                            <input type="date" id="due" name="due">
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+
+                
+                    <button id="add"> <i class="fas fa-plus"></i> ADD TASK</button>
+                
+                
+            </form>
+
+            
+
+            <form action="/delete-contact" method="POST">
+                
+                    <button id="delete"><i class="fas fa-trash-alt"></i> DELETE TASKS</a></button>
+                
+                <ul id="main-container">
+                    <% for(var i of tasks_collection){ %>
+                        <hr>
+                        <li id="task">
+                            <div id="one">
+                                <input type="checkbox" name="checked" value= "<%= i._id %>" id="check">
+                                <label for="desc"><%= i.desc %></label>
+                                <p><i class="fas fa-calendar-check"> <%= i.due %></i></p>
+                            </div>
+                            <div id="two">
+                                <p><%= i.catg %></p>
+                            </div>
+                        </li>
+                    <%}%>
+                </ul>
+                
+                
+            </form>
+            <hr>
+
+        </div>
+
+        <script src="/home.js" type="text/javascript"></script>
+    </body>
+
+</html>
