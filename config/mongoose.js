@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/tasks_list_db');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/tasks_list_db');
 
 const db = mongoose.connection;
 

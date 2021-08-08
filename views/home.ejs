@@ -18,7 +18,7 @@
             <form action="/create-task" method="POST" id="main-form">
                 <div id="des">
                     <h2>DESCRIPTION</h2>
-                    <input type="text" name="desc" id="desc" placeholder="What do you need to do?">
+                    <input type="text" name="desc" id="desc" placeholder="What do you need to do?" required>
                 </div>
                 <hr>
 
@@ -26,7 +26,7 @@
                     <tr>
                         <td id="first"><h2>CATEGORY</h2>
                             
-                            <select name="catg" id="catg" >
+                            <select name="catg" id="catg" required>
                                 
                                 <optgroup label="Choose a category">
                                     <option value="personal">Personal</option>
@@ -37,7 +37,7 @@
                             </select></td>
                         <td id="second">
                             <h2>DUE DATE</h2>
-                            <input type="date" id="due" name="due">
+                            <input type="date" id="due" name="due" required>
                         </td>
                     </tr>
                 </table>
